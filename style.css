@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  /* border: 1px solid red; */
+  height: 100px;
+}
+.overview__conditions {
+  background-image: url("/assets/images/bg-today-small.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  min-width: fit-content;
+  border: 1px solid red;
+  justify-content: space-around;
+}
+.report {
+  /* border: 2px solid limegreen; */
+  height: 100px;
+}
+.hourly {
+  /* border: 2px solid fuchsia; */
+  height: 100px;
+}
+
+@media (width > 500px) {
+  .desktop-group {
+    display: inline-flex;
+    flex-direction: row;
+  }
+}
