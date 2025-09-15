@@ -29,16 +29,19 @@
         <div class="desktop-group">
           <section class="report">
             <article class="overview">
-              <h2>Berlin, Germany</h2>
-              <datetime datetime="2025-08-05">Tuesday, August 5, 2025</datetime>
               <div class="overview__conditions">
-                <img
-                  height="120px"
-                  width="120px"
-                  src="/assets/images/icon-sunny.webp"
-                  alt=""
-                />
-                <p>68&deg;</p>
+                <h2 class="location">Berlin, Germany</h2>
+                <datetime class="date" datetime="2025-08-05"
+                  >Tuesday, August 5, 2025</datetime
+                >
+                <div class="overview-details">
+                  <img
+                    class="temperature-icon"
+                    src="/assets/images/icon-sunny.webp"
+                    alt=""
+                  />
+                  <p class="temp">68&deg;</p>
+                </div>
               </div>
             </article>
             <div class="condition__group">
@@ -49,7 +52,7 @@
             </div>
             <div class="daily"></div>
           </section>
-          <section class="hourly">hourly forecast</section>
+          <!-- <section class="hourly">hourly forecast</section> -->
         </div>
       </main>
     </div>

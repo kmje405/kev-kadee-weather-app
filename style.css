@@ -68,13 +68,44 @@ header {
   height: 100px;
 }
 .overview__conditions {
+  position: relative;
+  text-align: center;
   background-image: url("/assets/images/bg-today-small.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  width: 343px;
+  min-height: 286px;
+  height: min-content;
+  margin: 0 auto;
+}
+.overview__conditions .location {
+  display: inline-block;
+  font-family: "DM Sans";
+  font-size: calc(28 / 16 * 1rem);
+  font-weight: bold;
+  margin-block: 2.5rem 1rem;
+}
+.overview__conditions .date {
+  display: block;
+  font-family: "DM Sans";
+  font-size: calc(18 / 16 * 1rem);
+  font-weight: 500;
+  line-height: 1.2;
+  opacity: 80%;
+}
+.overview-details {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  min-width: fit-content;
-  border: 1px solid red;
-  justify-content: space-around;
+  max-width: min-content;
+  margin: 0 auto;
+}
+.overview-details .temp {
+  font-family: "DM Sans SBI";
+  font-size: calc(96 / 16 * 1rem);
+  letter-spacing: -2px;
+  font-weight: 600;
 }
 .report {
   /* border: 2px solid limegreen; */
@@ -83,6 +114,11 @@ header {
 .hourly {
   /* border: 2px solid fuchsia; */
   height: 100px;
+}
+
+.temperature-icon {
+  width: 120px;
+  height: 120px;
 }
 
 @media (width > 500px) {
