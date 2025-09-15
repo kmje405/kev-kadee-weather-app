@@ -1,9 +1,53 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer global {
+  @font-face {
+    font-family: "DM Sans SBI";
+    src: url("/assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf")
+      format("truetype");
+    font-display: swap;
+    font-weight: 100 900;
+  }
+  @font-face {
+    font-family: "DM Sans";
+    src: url("/assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")
+      format("truetype");
+    font-weight: 100 900;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Bricolage Grotesque Bold";
+    src: url("/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf")
+      format("truetype");
+    font-weight: 800;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    --c-neutral-0: #fff;
+    --c-neutral-200: #d4d3d9;
+    --c-neutral-300: #acacb7;
+    --c-neutral-600: #3c3b5e;
+    --c-neutral-700: #302f4a;
+    --c-neutral-800: #262540;
+    --c-neutral-900: #02012c;
+    --c-orange-500: #ff820a;
+    --c-blue-500: #4658d9;
+    --c-blue-700: #2b1b9c;
+  }
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 }
 
 body {
